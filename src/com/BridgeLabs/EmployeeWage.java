@@ -4,13 +4,14 @@ public class EmployeeWage {
 	static final int WAGE_PER_HOUR = 20;
     static final int FULL_DAY_HOUR = 8;
     static final int PART_DAY_HOUR = 4;
+    static int WorkedHours=0;
 	public static void main(String[] args) {
 		int employeeMOnthlySalary=0;		
 		int dailyWage = 0;
 		int Day=1;
 		
 		System.out.println("Welcome to Employee Wage");
-		while(Day<=20) {
+		while((Day<=20) && (WorkedHours<100)){
         	int employeeCheck = (int) (Math.random() * 10) % 3;
             System.out.println(employeeCheck + "in the day "+Day);
             switch (employeeCheck) {
