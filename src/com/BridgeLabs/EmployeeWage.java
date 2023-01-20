@@ -8,6 +8,7 @@ public class EmployeeWage {
 		int employeeMOnthlySalary=0;		
 		int dailyWage = 0;
 		int Day=1;
+		
 		System.out.println("Welcome to Employee Wage");
 		while(Day<=20) {
         	int employeeCheck = (int) (Math.random() * 10) % 3;
