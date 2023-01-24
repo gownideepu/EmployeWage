@@ -1,8 +1,7 @@
 package com.BridgeLabs;
 
 public class EmployeeWage {
-	
-public class Employee{
+    public class CompanyName{
     	
     	public static void EmployeeAttendence (String EmployeeName,String companyName,int Wage_per_hour,int Full_day_hours,int Part_time_hour) {
     		System.out.println("Employee Attendence calculation method in the -"+companyName);
@@ -42,20 +41,19 @@ public class Employee{
     	 
     }
 	public static void main(String[] args) {
-		EmployeeWage.Employee emp1=new EmployeeWage().new Employee();
-//		Employee emp1=new Employee();
-		System.out.println("emp1 attendence and"
-				+ " earnings");
-		emp1.EmployeeAttendence(" Hariprasad","TCS",20,8,4);
+		EmployeeWage.CompanyName tcs=new EmployeeWage().new CompanyName();
+		System.out.println("emp1 attendence and  earnings");
+		tcs.EmployeeAttendence(" Hariprasad","TCS",20,8,4);
 		//emp1.EmployeeAttendence(" Hari","TCS",20,8,4);
 		System.out.println("###########################");
-		EmployeeWage.Employee emp2=new EmployeeWage().new Employee();
+		EmployeeWage.CompanyName hcl=new EmployeeWage().new CompanyName();
 		System.out.println("emp2 attendence and"
 				+ " earnings");
-		emp1.EmployeeAttendence(" Hariprasad","Hcl",20,8,4);
+		hcl.EmployeeAttendence(" Hariprasad","Hcl",20,8,4);
 		
-		emp1.EmployeeAttendence(" Hari","TCS",20,8,4);
-		emp2.EmployeeAttendence(" prasad","TCS",20,8,4);
+		tcs.EmployeeAttendence(" Hari","TCS",20,8,4);
+		tcs.EmployeeAttendence(" prasad","TCS",20,8,4);
 		//System.out.println();
 	}
+
 }
